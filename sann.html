@@ -1,189 +1,21 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Futuristic Portal</title>
+  <title>Welcome</title>
   <style>
-    :root {
-      --bg: #020511;
-      --glow: #4ff5ff;
-      --accent: #8f7cff;
-      --text: #e8f7ff;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      min-height: 100vh;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      color: var(--text);
-      background: radial-gradient(circle at top left, rgba(79, 245, 255, 0.15), transparent 30%),
-                  linear-gradient(180deg, #06122c 0%, #01030c 100%);
-      display: grid;
-      place-items: center;
-      overflow: hidden;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background: linear-gradient(60deg, rgba(79, 245, 255, 0.1), transparent 25%, rgba(143, 124, 255, 0.08));
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .panel {
-      position: relative;
-      z-index: 1;
-      width: min(460px, calc(100vw - 40px));
-      padding: 36px;
-      border: 1px solid rgba(79, 245, 255, 0.18);
-      border-radius: 28px;
-      background: rgba(3, 8, 24, 0.84);
-      box-shadow: 0 0 80px rgba(79, 245, 255, 0.08),
-                  0 20px 60px rgba(0, 0, 0, 0.45);
-      backdrop-filter: blur(18px);
-      overflow: hidden;
-    }
-
-    .panel::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at top right, rgba(143, 124, 255, 0.24), transparent 28%);
-      pointer-events: none;
-    }
-
-    .title {
-      font-size: clamp(2rem, 4vw, 3rem);
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
+      font-family: Arial, sans-serif;
       text-align: center;
-      margin-bottom: 18px;
-      color: #b9f7ff;
-    }
-
-    .subtitle {
-      text-align: center;
-      color: rgba(232, 247, 255, 0.72);
-      margin-bottom: 32px;
-      line-height: 1.55;
-    }
-
-    .grid {
-      display: grid;
-      gap: 18px;
-    }
-
-    .field {
-      display: grid;
-      gap: 8px;
-    }
-
-    label {
-      font-size: 0.95rem;
-      color: rgba(232, 247, 255, 0.8);
-      letter-spacing: 0.04em;
-    }
-
-    input {
-      width: 100%;
-      border: 1px solid rgba(79, 245, 255, 0.2);
-      border-radius: 14px;
-      padding: 14px 16px;
-      background: rgba(5, 12, 33, 0.95);
-      color: var(--text);
-      font-size: 1rem;
-      outline: none;
-      transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    input:focus {
-      border-color: var(--glow);
-      box-shadow: 0 0 20px rgba(79, 245, 255, 0.22);
-    }
-
-    .action {
-      display: grid;
-      gap: 14px;
-      margin-top: 10px;
-    }
-
-    button {
-      border: none;
-      border-radius: 999px;
-      padding: 14px 0;
-      background: linear-gradient(135deg, rgba(79, 245, 255, 0.95), rgba(143, 124, 255, 0.95));
-      color: #050814;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      cursor: pointer;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      box-shadow: 0 14px 30px rgba(79, 245, 255, 0.2);
-    }
-
-    button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 18px 40px rgba(79, 245, 255, 0.28);
-    }
-
-    .wave {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      margin-top: 24px;
-    }
-
-    .wave span {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: rgba(79, 245, 255, 0.8);
-      animation: pulse 1.4s infinite ease-in-out;
-    }
-
-    .wave span:nth-child(2) { animation-delay: 0.12s; }
-    .wave span:nth-child(3) { animation-delay: 0.24s; }
-    .wave span:nth-child(4) { animation-delay: 0.36s; }
-
-    @keyframes pulse {
-      0%, 100% { transform: scale(0.75); opacity: 0.64; }
-      50% { transform: scale(1.4); opacity: 1; }
+      margin-top: 100px;
+      background: #f0f8ff;
     }
   </style>
 </head>
 <body>
-  <section class="panel">
-    <div class="title">Neon Nexus</div>
-    <p class="subtitle">
-      Welcome to the future interface. Authenticate to unlock your digital horizon.
-    </p>
-
-    <form class="grid">
-      <div class="field">
-        <label for="user">User handle</label>
-        <input id="user" type="text" name="username" placeholder="Enter your handle" required />
-      </div>
-
-      <div class="field">
-        <label for="pass">Access key</label>
-        <input id="pass" type="password" name="password" placeholder="Enter access code" required />
-      </div>
-
-      <div class="action">
-        <button type="submit">Initiate</button>
-      </div>
-    </form>
-
-    <div class="wave">
-      <span></span><span></span><span></span><span></span>
-    </div>
-  </section>
+  <h1>Welcome!</h1>
+  <p>Glad you're here. Have a great day!</p>
 </body>
 </html>
+```
